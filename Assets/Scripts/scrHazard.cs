@@ -24,6 +24,7 @@ public class scrHazard : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             health -= 10;
+            Destroy(projectile);
         }
     }
 }
