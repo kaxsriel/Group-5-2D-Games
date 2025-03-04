@@ -11,6 +11,7 @@ public class scrHazard : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player");
+        Destroy(gameObject, 2);
     }
 
     // Update is called once per frame
@@ -24,6 +25,10 @@ public class scrHazard : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             health -= 10;
+        }
+
+        if (other.CompareTag("Wall"))
+        {
             Destroy(projectile);
         }
     }
