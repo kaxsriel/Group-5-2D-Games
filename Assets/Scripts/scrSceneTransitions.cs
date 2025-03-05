@@ -29,4 +29,27 @@ public class scrSceneTransitions : MonoBehaviour
     {
         SceneManager.LoadScene("Win");
     }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Subway Door"))
+        {
+            SceneManager.LoadScene("Level One");
+        }
+
+        if (other.CompareTag("Subway Door 2"))
+        {
+            SceneManager.LoadScene("Level Two");
+        }
+    }
 }
