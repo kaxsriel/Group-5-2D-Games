@@ -20,7 +20,7 @@ public class scrHazard : MonoBehaviour
         transform.Translate(Vector2.left * Time.deltaTime);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

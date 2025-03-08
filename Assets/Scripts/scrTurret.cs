@@ -26,7 +26,7 @@ public class scrTurret : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
@@ -34,7 +34,7 @@ public class scrTurret : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.name == "Player")
         {
