@@ -22,7 +22,7 @@ public class scrTurret : MonoBehaviour
     {
         if (shootNow)
         {
-            Instantiate(projectile);
+            Instantiate(projectile, transform.position, Quaternion.identity);
         }
     }
 
