@@ -8,6 +8,8 @@ public class scrDoor : MonoBehaviour
     Vector3 _doorClosedPos;
     Vector3 _doorOpenPos;
     float _doorSpeed = 10f;
+    AudioSource soundEffects;
+    public AudioClip[] sounds;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,10 +24,14 @@ public class scrDoor : MonoBehaviour
         if (_isDoorOpen)
         {
             OpenDoor();
+            soundEffects.clip = sounds[0];
+            soundEffects.Play();
         }
         else if (!_isDoorOpen)
         {
             CloseDoor();
+            soundEffects.clip = sounds[1];
+            soundEffects.Play();
         }
     }
 
