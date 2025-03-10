@@ -51,5 +51,10 @@ public class scrSceneTransitions : MonoBehaviour
         {
             SceneManager.LoadScene("Level Two");
         }
+
+        if (other.CompareTag("Chip"))
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 }
