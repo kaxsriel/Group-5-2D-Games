@@ -6,7 +6,9 @@ public class scrHazard : MonoBehaviour
 {
     public GameObject projectile;
     GameObject player;
-    public int health = 100;
+    public float health = 100f;
+    AudioSource soundEffects;
+    public AudioClip[] sounds;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +26,9 @@ public class scrHazard : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            health -= 10;
+            health -= 10f;
+            soundEffects.clip = sounds[0];
+            soundEffects.Play();
         }
 
         if (other.CompareTag("Wall"))
