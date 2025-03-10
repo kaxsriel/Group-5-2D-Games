@@ -337,7 +337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000029981, y: -2.8746}
+  m_AnchoredPosition: {x: -40, y: -140}
   m_SizeDelta: {x: 1039.8448, y: 429.2198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1021956867
@@ -360,16 +360,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Controls: WASD to move, Space to jump. You can also sprint by holding
-    the Shift key. Whenever you pick up a weapon, press the O and P keys to swap
-    between your available weapons.
+  m_text: 'Controls: WASD to move, Space to jump, Shift to sprint, O/P to switch
+    weapons.
 
-    Story: You are a person who runs a old tech
-    shop in downtown Marus. However, after falling on tough times, you made a deal
-    with a fixer to try and bring your shop back to its former glory. In order to
-    do the jobs needed to fix up the shop, the fixer requires parts that can be found
-    throughout the city''s most dangerous sections, where rival groups lie in wait
-    to try you out.'
+
+    Story: As a struggling tech shop owner in Marus, you make a deal
+    with a fixer. To rebuild your shop, you must retrieve parts from the city''s
+    most dangerous areas, facing rival groups along the way.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cec3da1be26a1d429670f97fecce69d, type: 2}
   m_sharedMaterial: {fileID: 8570834621089423344, guid: 5cec3da1be26a1d429670f97fecce69d, type: 2}
@@ -396,8 +393,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31
-  m_fontSizeBase: 31
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -434,7 +431,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 326.66428, y: 0, z: 226.15228, w: 145.18422}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -505,8 +502,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -3330394759684735938, guid: 6601c5c1c55e9ea4e95594249cd4aafc, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -787,7 +784,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -268}
+  m_AnchoredPosition: {x: 0, y: -226}
   m_SizeDelta: {x: 160, y: 68.1238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485651879
@@ -918,7 +915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00002265, y: 256}
+  m_AnchoredPosition: {x: -0.00002265, y: 101}
   m_SizeDelta: {x: 194.3936, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1675778690
